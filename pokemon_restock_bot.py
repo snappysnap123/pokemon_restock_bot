@@ -216,20 +216,26 @@ def fetch_html_products(store_name: str, store_config: Dict) -> Dict[str, bool]:
         return {}
 
 
-def 
-    # Get previous state for this store
+
+def check_store(store_name: str, store_config: Dict, previous_state: Dict) -> Tuple[Dict[str, bool], List[str]]:
+    """Check a store for restocks and new products."""
+
+    if 'collection' in store_config:
+        current_products = fetch_shopify_products(store_name, store_config)
+    else:
+        current_products = fetch_html_products(store_name, store_config)
+
+    if not current_products:
+        logger.warning(f"No products found for {store_name}")
+        return {}, []
+
     store_state_key = f"{store_name}_products"
     previous_products = previous_state.get(store_state_key)
 
-    # First successful scan: establish a baseline without alerts.
     if previous_products is None:
-        logger.info(
-            f"{store_name}: Initial baseline saved; "
-            "no alerts sent for existing products."
-        )
+        logger.info(f"{store_name}: Initial baseline saved; no alerts for existing products.")
         return current_products, []
 
-    # Detect genuine restocks and newly listed products.
     newly_restocked = []
 
     for product_name, is_in_stock in current_products.items():
@@ -245,39 +251,8 @@ def
 
     return current_products, newly_restocked
 
-    """
-    # Determine store type and fetch accordingly
-    if 'collection' in store_config:
-        current_products = fetch_shopify_products(store_name, store_config)
-    else:
-        current_products = fetch_html_products(store_name, store_config)
-    
-    if not current_products:
-        logger.warning(f"No products found for {store_name}")
-        return current_products, []
-    
-    # Get previous state for this store
-    store_state_key = f"{store_name}_products"
-    previous_products = previous_state.get(store_state_key, {})
-    
-    # Detect newly restocked items (was unavailable, now available)
-    newly_restocked = []
-    for product_name, is_in_stock in current_products.items():
-        was_in_stock = previous_products.get(product_name, False)
-        
-        # Restock detected: was out, now in
-        if not was_in_stock and is_in_stock:
-            newly_restocked.append(product_name)
-            logger.info(f"✅ RESTOCK: {store_name} - {product_name}")
-    
-    # Also detect new products (never seen before, now in stock)
-    for product_name, is_in_stock in current_products.items():
-        if product_name not in previous_products and is_in_stock:
-            newly_restocked.append(product_name)
-            logger.info(f"🆕 NEW: {store_name} - {product_name}")
-    
-    return current_products, newly_restocked
 
+    
 
 def main():
     """Main execution function."""
