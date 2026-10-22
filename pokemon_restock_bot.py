@@ -216,10 +216,35 @@ def fetch_html_products(store_name: str, store_config: Dict) -> Dict[str, bool]:
         return {}
 
 
-def check_store(store_name: str, store_config: Dict, previous_state: Dict) -> Tuple[Dict[str, bool], List[str]]:
-    """
-    Check a single store and return current products + list of newly restocked items.
-    Returns: (current_products, newly_restocked_items)
+def 
+    # Get previous state for this store
+    store_state_key = f"{store_name}_products"
+    previous_products = previous_state.get(store_state_key)
+
+    # First successful scan: establish a baseline without alerts.
+    if previous_products is None:
+        logger.info(
+            f"{store_name}: Initial baseline saved; "
+            "no alerts sent for existing products."
+        )
+        return current_products, []
+
+    # Detect genuine restocks and newly listed products.
+    newly_restocked = []
+
+    for product_name, is_in_stock in current_products.items():
+        if not is_in_stock:
+            continue
+
+        if product_name not in previous_products:
+            newly_restocked.append(product_name)
+            logger.info(f"🆕 NEW PRODUCT: {store_name} - {product_name}")
+        elif not previous_products[product_name]:
+            newly_restocked.append(product_name)
+            logger.info(f"✅ RESTOCK: {store_name} - {product_name}")
+
+    return current_products, newly_restocked
+
     """
     # Determine store type and fetch accordingly
     if 'collection' in store_config:
