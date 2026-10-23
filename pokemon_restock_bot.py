@@ -26,7 +26,7 @@ DISCORD_WEBHOOK_URL = os.getenv('DISCORD_WEBHOOK_URL', '')
 SHOPIFY_STORES = {
     'The Game Tree': {
         'url': 'https://thegametree.co.nz',
-        'collection': 'pokemon',
+        'collection': 'pokemon-products',
     },
     'TCG Collector NZ': {
         'url': 'https://tcgcollectornz.com',
