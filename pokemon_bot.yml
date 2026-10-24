@@ -33,8 +33,9 @@ jobs:
       
       - name: Commit state file
         run: |
-          git config --local user.email "action@github.com"
+                    git config --local user.email "action@github.com"
           git config --local user.name "Pokemon Bot Action"
-          git add pokemon_bot_state.json || true
-          git commit -m "Update bot state - $(date)" || true
-          git push || true
+          git add pokemon_bot_state.json
+          git commit -m "Update bot state" || true
+          git pull --rebase origin main
+          git push
