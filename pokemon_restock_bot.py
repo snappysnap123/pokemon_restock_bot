@@ -240,9 +240,34 @@ def check_store(store_name: str, store_config: Dict, previous_state: Dict) -> Tu
 
     for product_name, is_in_stock in current_products.items():
         name_lower = product_name.lower()
-        if any(word in name_lower for word in ["booster", "elite trainer box", "etb", "tin", "collection box", "collection", "battle deck", "starter deck", "blister", "build & battle", "display box", "bundle", "sealed", "premium box", "trainer box", "ultra premium", "deck box", "battle academy"]):
-            pass
-        else:
+                sealed_keywords = [
+            "booster pack",
+            "booster box",
+            "booster bundle",
+            "booster display",
+            "elite trainer box",
+            "pokemon center etb",
+            " etb",
+            "pokemon tin",
+            " tin",
+            "collection box",
+            "premium collection",
+            "ultra premium collection",
+            "build & battle box",
+            "build and battle box",
+            "battle academy",
+            "blister pack",
+            "three-pack blister",
+            "3-pack blister",
+            "sleeved booster",
+            "special collection",
+            "trainer toolkit",
+            "ascended heroes",
+            "30th celebrations",
+            "30th",
+            "delta reign",
+        ]
+        if not any(word in name_lower for word in sealed_keywords):
             continue
         if not is_in_stock:
             continue
