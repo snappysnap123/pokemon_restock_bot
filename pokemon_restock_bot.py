@@ -240,7 +240,7 @@ def check_store(store_name: str, store_config: Dict, previous_state: Dict) -> Tu
 
     for product_name, is_in_stock in current_products.items():
         name_lower = product_name.lower()
-                sealed_keywords = [
+        sealed_keywords = [
             "booster pack",
             "booster box",
             "booster bundle",
