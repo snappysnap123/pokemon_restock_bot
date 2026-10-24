@@ -321,8 +321,4 @@ def main():
 
 
 if __name__ == '__main__':
-    if send_discord_alert("🧪 Test message: Pokémon Restock Bot webhook is working!"):
-        print("Discord test succeeded")
-    else:
-        print("Discord test failed")
     main()
