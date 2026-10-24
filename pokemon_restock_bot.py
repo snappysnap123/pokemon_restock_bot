@@ -239,11 +239,11 @@ def check_store(store_name: str, store_config: Dict, previous_state: Dict) -> Tu
     newly_restocked = []
 
     for product_name, is_in_stock in current_products.items():
-              name_lower = product_name.lower()
-                if any(word in name_lower for word in ["booster", "elite trainer box", "etb", "tin", "collection box", "collection", "battle deck", "starter deck", "blister", "build & battle", "display box", "bundle", "sealed", "premium box", "trainer box", "ultra premium", "deck box", "battle academy"]):
+        name_lower = product_name.lower()
+        if any(word in name_lower for word in ["booster", "elite trainer box", "etb", "tin", "collection box", "collection", "battle deck", "starter deck", "blister", "build & battle", "display box", "bundle", "sealed", "premium box", "trainer box", "ultra premium", "deck box", "battle academy"]):
             pass
         else:
-            continue  
+            continue
         if not is_in_stock:
             continue
 
