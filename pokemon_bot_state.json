@@ -8,7 +8,7 @@
     "Ex Crystal Guardians Poster": true,
     "The Game Tree's Pok\u00e9mon Bulk Value Packs": true,
     "2008 World Championships & Video Game Showdown Poster": true,
-    "Battle Styles Booster Box": false,
+    "Battle Styles Booster Box": true,
     "Battle Region Booster Box (s9a) *Japanese*": true,
     "Champion's Path Elite Trainer Box": true,
     "Cosmic Eclipse Booster Pack": true,
@@ -83,7 +83,6 @@
     "Celebrations Booster Pack": true,
     "Chilling Reign Elite Trainer Box": false,
     "*SEALED* Arceus V Holo Promo 267/S-P - JAPANESE": true,
-    "200x Basic Energy Cards (randomly assorted)": false,
     "Shaymin VSTAR - Star Birth - 013/100 - JAPANESE RRR Holo": true,
     "Charizard V - Star Birth - 014/100 - JAPANESE RR Holo": true,
     "Charizard VSTAR - Star Birth - 015/100 - JAPANESE RRR Holo": true,
@@ -122,7 +121,6 @@
     "Trevenant V - Evolving Skies - 013/203 - Holo Ultra Rare": true,
     "Medicham V - Evolving Skies - 083/203 - Holo Ultra Rare": true,
     "Barry - Brilliant Stars - 167/172 - Holo Ultra Rare Full Art": true,
-    "Kindler - Brilliant Stars - 170/172 - Holo Ultra Rare Full Art": false,
     "Whimsicott VSTAR - Brilliant Stars - 065/172 - Holo Ultra Rare VSTAR": true,
     "Shaymin V - Brilliant Stars - 013/172 - Holo Ultra Rare": true,
     "Zarude V - Brilliant Stars - 016/172 - Holo Ultra Rare": true,
@@ -249,7 +247,9 @@
     "Fusion Arts Booster Pack (s8) *Japanese*": true,
     "Fusion Arts Booster Box (s8) *Japanese*": true,
     "Amazing Volt Tackle Booster Box (s4) *Japanese*": true,
-    "10x Amazing Volt Tackle Booster Packs (s4) - Value Deal *Japanese*": true
+    "10x Amazing Volt Tackle Booster Packs (s4) - Value Deal *Japanese*": true,
+    "Beautifly - Dark Phantasma - 006/071 - JAPANESE Holo Rare": true,
+    "Magnezone V - Dark Phantasma - 016/071 - JAPANESE RR Holo": true
   },
   "TCG Collector NZ_products": {
     "Pokemon TCG: Scarlet & Violet: Shrouded Fable Booster Pack BUNDLE *Sealed*": false,
