@@ -38,14 +38,16 @@ jobs:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: python pokemon_restock_bot.py
 
+      
       - name: Save stock history
         run: |
           git config --local user.email "action@github.com"
-          git config --local user.name "Pokemon Bot Action"
+          git config --local user.name "Pokémon Bot Action"
           git add -f pokemon_bot_state.json
           if ! git diff --cached --quiet; then
             git commit -m "Update Pokémon bot stock history"
-            git push
+            git pull --rebase origin main
+            git push origin HEAD:main
           else
             echo "Stock history unchanged; nothing to commit."
           fi
