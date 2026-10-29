@@ -81,7 +81,7 @@
     "2007 World Championships Poster": true,
     "Diamond & Pearl (base) Poster": true,
     "Celebrations Booster Pack": true,
-    "Chilling Reign Elite Trainer Box": false,
+    "Chilling Reign Elite Trainer Box": true,
     "*SEALED* Arceus V Holo Promo 267/S-P - JAPANESE": true,
     "200x Basic Energy Cards (randomly assorted)": true,
     "Shaymin VSTAR - Star Birth - 013/100 - JAPANESE RRR Holo": true,
@@ -129,7 +129,7 @@
     "Lucario - Brilliant Stars - 079/172 - Holo Rare/Reverse Holo": true,
     "Brilliant Stars Code Card TCG Online": true,
     "Wyrdeer - Battle Region - 070/067 - JAPANESE CHR Holo": true,
-    "Hoothoot - Battle Region - 073/067 - JAPANESE CHR Holo": true,
+    "Hoothoot - Battle Region - 073/067 - JAPANESE CHR Holo": false,
     "Hisuian Typhlosion VSTAR - Battle Region - 029/067 - JAPANESE RRR Holo": true,
     "Hisuian Typhlosion V - Battle Region - 076/067 - JAPANESE SR Holo Full Art": true,
     "Garchomp V - Battle Region - 079/067 - JAPANESE SR Holo Full Art": true,
@@ -252,7 +252,6 @@
     "10x Amazing Volt Tackle Booster Packs (s4) - Value Deal *Japanese*": true
   },
   "TCG Collector NZ_products": {
-    "Pokemon TCG: Scarlet & Violet: Shrouded Fable Booster Pack BUNDLE *Sealed*": false,
     "Pokemon TCG: League Battle Deck - Miraidon ex *Sealed*": true,
     "Pokemon TCG: Battle Academy Board Game 2024 *Sealed*": false,
     "Pokemon TCG: League Battle Deck - Mega Lucario ex *Sealed*": true,
