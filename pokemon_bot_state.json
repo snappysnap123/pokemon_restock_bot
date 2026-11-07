@@ -129,7 +129,7 @@
     "Hoothoot - Battle Region - 073/067 - JAPANESE CHR Holo": true,
     "Hisuian Typhlosion VSTAR - Battle Region - 029/067 - JAPANESE RRR Holo": true,
     "Hisuian Typhlosion V - Battle Region - 076/067 - JAPANESE SR Holo Full Art": true,
-    "Garchomp V - Battle Region - 079/067 - JAPANESE SR Holo Full Art": true,
+    "Garchomp V - Battle Region - 079/067 - JAPANESE SR Holo Full Art": false,
     "Hisuian Typhlosion VSTAR - Battle Region - 085/067 - JAPANESE HR Rainbow Rare": true,
     "Garchomp V - Battle Region - 084/067 - JAPANESE CSR Holo": true,
     "**CLEARANCE** Mew Nanoblock Set": true,
@@ -258,8 +258,7 @@
     "Pokemon TCG: League Battle Deck - Mega Lucario ex *Sealed*": true,
     "Pokemon TCG: 2025 World Championships Deck *Sealed*": true,
     "Pokemon TCG: 2-Pack Blisters: Zarude *Sealed*": false,
-    "Pokemon TCG: Mini Portfolio (September 2026) *Sealed*": true,
-    "Pokemon TCG: Scarlet & Violet: Surging Sparks Booster Pack *Sealed*": false
+    "Pokemon TCG: Mini Portfolio (September 2026) *Sealed*": true
   },
   "Card Masters_products": {
     "PRE ORDER - Pokemon TCG Mega Evolutions 6 Delta Reign Booster Bundle": false,
