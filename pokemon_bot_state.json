@@ -142,7 +142,6 @@
     "Zarude V - Vivid Voltage - 022/185 - Holo Ultra Rare": true,
     "Galarian Darmanitan V - Vivid Voltage - 036/185 - Holo Ultra Rare": true,
     "Drapion V - Vivid Voltage - 106/185 - Holo Ultra Rare": true,
-    "Steelix V - Vivid Voltage - 115/185 - Holo Ultra Rare": true,
     "**CLEARANCE** Charmander Nanoblock Set": true,
     "Pokemon Center Kanazawa Special Pikachu Box *Japanese*": true,
     "#37 Hitmontop - Pok\u00e9mon League (July 2001) - WotC Black Star Promo (LP+)": true,
@@ -249,7 +248,8 @@
     "Magnezone V - Dark Phantasma - 016/071 - JAPANESE RR Holo": true,
     "Gastly - Dark Phantasma - 021/071 - JAPANESE Common/Reverse Holo": false,
     "Hisuian Growlithe - Dark Phantasma - 032/071 - JAPANESE Common/Reverse Holo": true,
-    "Hisuian Arcanine - Dark Phantasma - 033/071 - JAPANESE Holo Rare": true
+    "Hisuian Arcanine - Dark Phantasma - 033/071 - JAPANESE Holo Rare": true,
+    "Machamp - Dark Phantasma - 036/071 - JAPANESE Holo Rare": true
   },
   "TCG Collector NZ_products": {
     "Pokemon TCG: League Battle Deck - Mega Greninja ex *Sealed* (PRE-ORDER, SHIPS DEC 11TH)": true,
@@ -334,7 +334,6 @@
     "Pokemon TCG: Perfect Order Booster - Mega Clefable ex": true,
     "Pokemon TCG Mega Evolution - Perfect Order Booster - x36 Boosters SEALED BOX": true,
     "Pokemon TCG Lumiose City Mini Tin Set": true,
-    "Pokemon TCG Mega Zygarde ex Premium Collection": true,
     "Pokemon TCG - 4 Pocket Premium Snap Binder Green": true,
     "2024 Pokemon TCG World Championships Deck - Regidrago Vstar": true,
     "2024 Pokemon TCG World Championships Deck - The 'Don": true,
@@ -394,6 +393,7 @@
     "Pokemon TCG: Mega Evolution - Delta Reign Booster - Mega Golisopod ex": true,
     "Pokemon TCG Mini Portfolio Q4 2026 With Booster": true,
     "Pokemon TCG 2PK Blisters - Zarude": true,
+    "Pokemon TCG Mega Zygarde ex Premium Collection": false,
     "Pok\u00e9mon TCG Team Rocket\u2019s Mewtwo ex League Battle Deck": false,
     "Pokemon TCG 30th Celebration Tin - Greninja": false,
     "Pokemon TCG 30th Celebration Tin - Sylveon": false,
